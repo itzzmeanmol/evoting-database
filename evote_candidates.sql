@@ -44,7 +44,7 @@ CREATE TABLE `candidates` (
 
 LOCK TABLES `candidates` WRITE;
 /*!40000 ALTER TABLE `candidates` DISABLE KEYS */;
-INSERT INTO `candidates` VALUES (1,'Nitisha',1001,'Bhopal',34,'female','BJP','1234',0,0),(2,'Raj',1002,'Bhopal',34,'male','Congress','1234',0,0),(3,'Anvitha',1003,'Bengaluru',32,'female','AAP','1234',0,0),(4,'Akanksha',1004,'Bengaluru',40,'female','Congress','1234',0,0),(5,'Farhan',1005,'Bhopal',39,'male','AAP','1234',0,0),(6,'Ashwin',1006,'Bengaluru',47,'male','BSP','1234',0,0),(7,'Neha',1007,'Bhopal',40,'female','BSP','1234',0,0),(8,'Nitin',1008,'Bengaluru',32,'male','SP','1234',0,0),(9,'Numan',1009,'Bengaluru',49,'male','ShivSena','1234',0,0),(10,'Pavithra',1010,'Bhopal',39,'female','ShivSena','1234',0,0);
+INSERT INTO `candidates` VALUES (1,'Nitisha',1001,'Bhopal',34,'female','BJP','1234',1,1),(2,'Raj',1002,'Bhopal',34,'male','Congress','1234',0,0),(3,'Anvitha',1003,'Bengaluru',32,'female','AAP','1234',1,1),(4,'Akanksha',1004,'Bengaluru',40,'female','Congress','1234',1,0),(5,'Farhan',1005,'Bhopal',39,'male','AAP','1234',1,0),(6,'Ashwin',1006,'Bengaluru',47,'male','BSP','1234',0,0),(7,'Neha',1007,'Bhopal',40,'female','BSP','1234',0,0),(8,'Nitin',1008,'Bengaluru',32,'male','SP','1234',0,0),(9,'Numan',1009,'Bengaluru',49,'male','ShivSena','1234',0,0),(10,'Pavithra',1010,'Bhopal',39,'female','ShivSena','1234',1,0);
 /*!40000 ALTER TABLE `candidates` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-05 12:46:01
+-- Dump completed on 2020-03-05 16:42:18

@@ -32,7 +32,7 @@ CREATE TABLE `voters` (
   `castvote` int DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `vin_UNIQUE` (`vin`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +41,7 @@ CREATE TABLE `voters` (
 
 LOCK TABLES `voters` WRITE;
 /*!40000 ALTER TABLE `voters` DISABLE KEYS */;
-INSERT INTO `voters` VALUES (1,'Anmol',2001,'Bhopal','1234',0,0),(2,'Numan',2002,'Bengaluru','1234',0,0),(3,'Saunak',2003,'Bengaluru','1234',0,0),(4,'Meghana',2004,'Bhopal','1234',0,0),(5,'Mehak',2005,'Bhopal','1234',0,0),(6,'Shibani',2006,'Bengaluru','1234',0,0),(7,'Divyansh',2007,'Bengaluru','1234',0,0),(8,'Ravi',2008,'Bhopal','1234',0,0),(9,'Arul',2009,'Bengaluru','1234',0,0),(10,'Satyabhama',2010,'Bengaluru','1234',0,0),(33,'Rakshit',2011,'Bhopal','1234',0,0);
+INSERT INTO `voters` VALUES (1,'Anmol',2001,'Bhopal','1234',1,0),(2,'Numan',2002,'Bengaluru','1234',0,0),(3,'Saunak',2003,'Bengaluru','1234',0,0),(4,'Meghana',2004,'Bhopal','1234',1,1),(5,'Mehak',2005,'Bhopal','1234',0,0),(6,'Shibani',2006,'Bengaluru','1234',0,0),(7,'Divyansh',2007,'Bengaluru','1234',0,0),(8,'Ravi',2008,'Bhopal','1234',0,0),(9,'Arul',2009,'Bengaluru','1234',0,0),(10,'Satyabhama',2010,'Bengaluru','1234',0,0),(33,'Rakshit',2011,'Bhopal','1234',0,0),(34,'Pratiksha',2012,'Bengaluru','1234',1,1);
 /*!40000 ALTER TABLE `voters` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-05 12:46:02
+-- Dump completed on 2020-03-05 16:42:19

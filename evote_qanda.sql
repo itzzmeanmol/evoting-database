@@ -16,27 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `tck`
+-- Table structure for table `qanda`
 --
 
-DROP TABLE IF EXISTS `tck`;
+DROP TABLE IF EXISTS `qanda`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `tck` (
-  `id` int NOT NULL,
-  `tck` varchar(45) DEFAULT 'sadfsa',
+CREATE TABLE `qanda` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `q` varchar(450) DEFAULT NULL,
+  `a` varchar(450) DEFAULT NULL,
+  `flag` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `tck`
+-- Dumping data for table `qanda`
 --
 
-LOCK TABLES `tck` WRITE;
-/*!40000 ALTER TABLE `tck` DISABLE KEYS */;
-INSERT INTO `tck` VALUES (1,'c45v0kmr');
-/*!40000 ALTER TABLE `tck` ENABLE KEYS */;
+LOCK TABLES `qanda` WRITE;
+/*!40000 ALTER TABLE `qanda` DISABLE KEYS */;
+INSERT INTO `qanda` VALUES (1,'Who are you?','I won\'t tell.',1),(2,'Who are you?','I won\'t tell.',1),(3,'Who are you?','I won\'t tell.',1),(4,'Why are you?',NULL,0),(5,NULL,NULL,0),(6,'hnj',NULL,0);
+/*!40000 ALTER TABLE `qanda` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-05 16:42:18
+-- Dump completed on 2020-03-05 16:42:16
